@@ -1,5 +1,5 @@
 //
-//  HomeRouter.swift
+//  ResultRouter.swift
 //  DesafioBCI
 //
 //  Created by Carlos Sepulveda on 23-02-20.
@@ -12,29 +12,23 @@
 
 import UIKit
 
-@objc protocol HomeRoutingLogic
+@objc protocol ResultRoutingLogic
 {
   //func routeToSomewhere(segue: UIStoryboardSegue?)
 }
 
-protocol HomeDataPassing
+protocol ResultDataPassing
 {
-  var dataStore: HomeDataStore? { get }
+  var dataStore: ResultDataStore? { get }
 }
 
-class HomeRouter: NSObject, HomeRoutingLogic, HomeDataPassing
+class ResultRouter: NSObject, ResultRoutingLogic, ResultDataPassing
 {
-  weak var viewController: HomeViewController?
-  var dataStore: HomeDataStore?
+  weak var viewController: ResultViewController?
+  var dataStore: ResultDataStore?
   
   // MARK: Routing
-    func getResults (segue: UIStoryboardSegue?){
-        if let segue = segue {
-            let destinationVC = segue.destination as! ResultViewController
-            var destinationDS = destinationVC.router!.dataStore!
-            //passDataToSom
-        }
-    }
+  
   //func routeToSomewhere(segue: UIStoryboardSegue?)
   //{
   //  if let segue = segue {
@@ -52,14 +46,14 @@ class HomeRouter: NSObject, HomeRoutingLogic, HomeDataPassing
 
   // MARK: Navigation
   
-  //func navigateToSomewhere(source: HomeViewController, destination: SomewhereViewController)
+  //func navigateToSomewhere(source: ResultViewController, destination: SomewhereViewController)
   //{
   //  source.show(destination, sender: nil)
   //}
   
   // MARK: Passing data
   
-  //func passDataToSomewhere(source: HomeDataStore, destination: inout SomewhereDataStore)
+  //func passDataToSomewhere(source: ResultDataStore, destination: inout SomewhereDataStore)
   //{
   //  destination.name = source.name
   //}
