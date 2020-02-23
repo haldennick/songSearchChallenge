@@ -103,8 +103,7 @@
 		1E595A622402329F00BA8F7E /* DesafioBCI */ = {
 			isa = PBXGroup;
 			children = (
-				1EB98CD32402341E00CF320F /* Result */,
-				1EB98CD2240233DA00CF320F /* Home */,
+				1EB98CE0240238F200CF320F /* Scenes */,
 				1E595A632402329F00BA8F7E /* AppDelegate.swift */,
 				1E595A652402329F00BA8F7E /* SceneDelegate.swift */,
 				1E595A672402329F00BA8F7E /* ViewController.swift */,
@@ -143,6 +142,15 @@
 			children = (
 			);
 			path = Result;
+			sourceTree = "<group>";
+		};
+		1EB98CE0240238F200CF320F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				1EB98CD32402341E00CF320F /* Result */,
+				1EB98CD2240233DA00CF320F /* Home */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		205C423EF9705600BAEC2C4D /* Pods */ = {
