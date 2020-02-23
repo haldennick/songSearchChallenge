@@ -9,6 +9,7 @@ target 'DesafioBCI' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
+  pod 'RealmSwift'
   target 'DesafioBCITests' do
     inherit! :search_paths
     # Pods for testing

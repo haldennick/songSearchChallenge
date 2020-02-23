@@ -27,6 +27,7 @@
 		1EE271B22402494C00062541 /* ResultModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE271AC2402494C00062541 /* ResultModels.swift */; };
 		1EE271B32402494C00062541 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE271AD2402494C00062541 /* ResultViewController.swift */; };
 		1EE271B42402494C00062541 /* ResultInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE271AE2402494C00062541 /* ResultInteractor.swift */; };
+		1EE271B92402E01200062541 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE271B82402E01200062541 /* ResultViewController.swift */; };
 		35497A6C1C0520E2FC43F26F /* Pods_DesafioBCITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33A96AD4ACCF0DFF7732034D /* Pods_DesafioBCITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		1EE271AC2402494C00062541 /* ResultModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultModels.swift; sourceTree = "<group>"; };
 		1EE271AD2402494C00062541 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		1EE271AE2402494C00062541 /* ResultInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultInteractor.swift; sourceTree = "<group>"; };
+		1EE271B82402E01200062541 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		33A96AD4ACCF0DFF7732034D /* Pods_DesafioBCITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioBCITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4167B937A42F2F01D79464B8 /* Pods_DesafioBCI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioBCI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85117AB60529909E8C5FB199 /* Pods-DesafioBCI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioBCI.release.xcconfig"; path = "Target Support Files/Pods-DesafioBCI/Pods-DesafioBCI.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,10 +117,12 @@
 		1E595A622402329F00BA8F7E /* DesafioBCI */ = {
 			isa = PBXGroup;
 			children = (
+				1EE271B72402DFD500062541 /* View */,
+				1EE271B62402DFC500062541 /* Controller */,
+				1EE271B52402DFB700062541 /* Model */,
 				1EB98CE0240238F200CF320F /* Scenes */,
 				1E595A632402329F00BA8F7E /* AppDelegate.swift */,
 				1E595A652402329F00BA8F7E /* SceneDelegate.swift */,
-				1E595A672402329F00BA8F7E /* ViewController.swift */,
 				1E595A692402329F00BA8F7E /* Main.storyboard */,
 				1E595A6C240232A100BA8F7E /* Assets.xcassets */,
 				1E595A6E240232A100BA8F7E /* LaunchScreen.storyboard */,
@@ -169,6 +173,29 @@
 				1EB98CD2240233DA00CF320F /* Home */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		1EE271B52402DFB700062541 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1EE271B62402DFC500062541 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1E595A672402329F00BA8F7E /* ViewController.swift */,
+				1EE271B82402E01200062541 /* ResultViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1EE271B72402DFD500062541 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		205C423EF9705600BAEC2C4D /* Pods */ = {
@@ -362,6 +389,7 @@
 				1E595A682402329F00BA8F7E /* ViewController.swift in Sources */,
 				1EE271B22402494C00062541 /* ResultModels.swift in Sources */,
 				1EE271AF2402494C00062541 /* ResultPresenter.swift in Sources */,
+				1EE271B92402E01200062541 /* ResultViewController.swift in Sources */,
 				1EE271B02402494C00062541 /* ResultWorker.swift in Sources */,
 				1EB98CDC2402343600CF320F /* HomeRouter.swift in Sources */,
 				1E595A642402329F00BA8F7E /* AppDelegate.swift in Sources */,
