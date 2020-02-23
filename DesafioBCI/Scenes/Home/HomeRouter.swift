@@ -32,7 +32,7 @@ class HomeRouter: NSObject, HomeRoutingLogic, HomeDataPassing
         if let segue = segue {
             let destinationVC = segue.destination as! ResultViewController
             var destinationDS = destinationVC.router!.dataStore!
-            passDataToResult(source: <#T##ResultDataStore#>, destination: &<#T##ResultDataStore#>)
+            //)
         }
     }
   //func routeToSomewhere(segue: UIStoryboardSegue?)
@@ -59,7 +59,7 @@ class HomeRouter: NSObject, HomeRoutingLogic, HomeDataPassing
   
   // MARK: Passing data
     func passDataToResult(source: ResultDataStore, destination: inout ResultDataStore){
-        destination.name = source.name
+       // destination.name = source.name
         
     }
   //func passDataToSomewhere(source: HomeDataStore, destination: inout SomewhereDataStore)
