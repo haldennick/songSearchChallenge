@@ -20,12 +20,14 @@ protocol ResultBusinessLogic
 protocol ResultDataStore
 {
   //var name: String { get set }
+    var name: String { get }
 }
 
 class ResultInteractor: ResultBusinessLogic, ResultDataStore
 {
   var presenter: ResultPresentationLogic?
   var worker: ResultWorker?
+    var name: String = ""
   //var name: String = ""
   
   // MARK: Do something
@@ -39,3 +41,5 @@ class ResultInteractor: ResultBusinessLogic, ResultDataStore
     presenter?.presentSomething(response: response)
   }
 }
+
+
