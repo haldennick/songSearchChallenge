@@ -1,0 +1,6 @@
+framework module Pods_DesafioBCITests {
+  umbrella header "Pods-DesafioBCITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
