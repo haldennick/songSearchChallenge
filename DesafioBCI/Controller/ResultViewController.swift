@@ -10,10 +10,18 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    @IBOutlet weak var albumCover: UIImageView!
+    @IBOutlet weak var songNameLabel: UILabel!
+    @IBOutlet weak var artistNameLabel: UILabel!
+    @IBOutlet weak var albumNameLabel: UILabel!
+    @IBOutlet weak var yearLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let album = "Los palitroques"
+        
+        songNameLabel.text = album
     }
     
 

@@ -15,19 +15,8 @@
 		1E595A6D240232A100BA8F7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E595A6C240232A100BA8F7E /* Assets.xcassets */; };
 		1E595A70240232A100BA8F7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E595A6E240232A100BA8F7E /* LaunchScreen.storyboard */; };
 		1E595A7B240232A100BA8F7E /* DesafioBCITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E595A7A240232A100BA8F7E /* DesafioBCITests.swift */; };
-		1EB98CDA2402343600CF320F /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB98CD42402343600CF320F /* HomePresenter.swift */; };
-		1EB98CDB2402343600CF320F /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB98CD52402343600CF320F /* HomeWorker.swift */; };
-		1EB98CDC2402343600CF320F /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB98CD62402343600CF320F /* HomeRouter.swift */; };
-		1EB98CDD2402343600CF320F /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB98CD72402343600CF320F /* HomeModels.swift */; };
-		1EB98CDE2402343600CF320F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB98CD82402343600CF320F /* HomeViewController.swift */; };
-		1EB98CDF2402343600CF320F /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB98CD92402343600CF320F /* HomeInteractor.swift */; };
-		1EE271AF2402494C00062541 /* ResultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE271A92402494C00062541 /* ResultPresenter.swift */; };
-		1EE271B02402494C00062541 /* ResultWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE271AA2402494C00062541 /* ResultWorker.swift */; };
-		1EE271B12402494C00062541 /* ResultRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE271AB2402494C00062541 /* ResultRouter.swift */; };
-		1EE271B22402494C00062541 /* ResultModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE271AC2402494C00062541 /* ResultModels.swift */; };
-		1EE271B32402494C00062541 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE271AD2402494C00062541 /* ResultViewController.swift */; };
-		1EE271B42402494C00062541 /* ResultInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE271AE2402494C00062541 /* ResultInteractor.swift */; };
 		1EE271B92402E01200062541 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE271B82402E01200062541 /* ResultViewController.swift */; };
+		1EE271BB2402E3C200062541 /* SongManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE271BA2402E3C200062541 /* SongManager.swift */; };
 		35497A6C1C0520E2FC43F26F /* Pods_DesafioBCITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33A96AD4ACCF0DFF7732034D /* Pods_DesafioBCITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,19 +42,8 @@
 		1E595A76240232A100BA8F7E /* DesafioBCITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioBCITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E595A7A240232A100BA8F7E /* DesafioBCITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioBCITests.swift; sourceTree = "<group>"; };
 		1E595A7C240232A100BA8F7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1EB98CD42402343600CF320F /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
-		1EB98CD52402343600CF320F /* HomeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorker.swift; sourceTree = "<group>"; };
-		1EB98CD62402343600CF320F /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
-		1EB98CD72402343600CF320F /* HomeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; };
-		1EB98CD82402343600CF320F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		1EB98CD92402343600CF320F /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
-		1EE271A92402494C00062541 /* ResultPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPresenter.swift; sourceTree = "<group>"; };
-		1EE271AA2402494C00062541 /* ResultWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultWorker.swift; sourceTree = "<group>"; };
-		1EE271AB2402494C00062541 /* ResultRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultRouter.swift; sourceTree = "<group>"; };
-		1EE271AC2402494C00062541 /* ResultModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultModels.swift; sourceTree = "<group>"; };
-		1EE271AD2402494C00062541 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
-		1EE271AE2402494C00062541 /* ResultInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultInteractor.swift; sourceTree = "<group>"; };
 		1EE271B82402E01200062541 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		1EE271BA2402E3C200062541 /* SongManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongManager.swift; sourceTree = "<group>"; };
 		33A96AD4ACCF0DFF7732034D /* Pods_DesafioBCITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioBCITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4167B937A42F2F01D79464B8 /* Pods_DesafioBCI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioBCI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85117AB60529909E8C5FB199 /* Pods-DesafioBCI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioBCI.release.xcconfig"; path = "Target Support Files/Pods-DesafioBCI/Pods-DesafioBCI.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,7 +98,6 @@
 				1EE271B72402DFD500062541 /* View */,
 				1EE271B62402DFC500062541 /* Controller */,
 				1EE271B52402DFB700062541 /* Model */,
-				1EB98CE0240238F200CF320F /* Scenes */,
 				1E595A632402329F00BA8F7E /* AppDelegate.swift */,
 				1E595A652402329F00BA8F7E /* SceneDelegate.swift */,
 				1E595A692402329F00BA8F7E /* Main.storyboard */,
@@ -140,44 +117,10 @@
 			path = DesafioBCITests;
 			sourceTree = "<group>";
 		};
-		1EB98CD2240233DA00CF320F /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				1EB98CD42402343600CF320F /* HomePresenter.swift */,
-				1EB98CD52402343600CF320F /* HomeWorker.swift */,
-				1EB98CD62402343600CF320F /* HomeRouter.swift */,
-				1EB98CD72402343600CF320F /* HomeModels.swift */,
-				1EB98CD82402343600CF320F /* HomeViewController.swift */,
-				1EB98CD92402343600CF320F /* HomeInteractor.swift */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		1EB98CD32402341E00CF320F /* Result */ = {
-			isa = PBXGroup;
-			children = (
-				1EE271A92402494C00062541 /* ResultPresenter.swift */,
-				1EE271AA2402494C00062541 /* ResultWorker.swift */,
-				1EE271AB2402494C00062541 /* ResultRouter.swift */,
-				1EE271AC2402494C00062541 /* ResultModels.swift */,
-				1EE271AD2402494C00062541 /* ResultViewController.swift */,
-				1EE271AE2402494C00062541 /* ResultInteractor.swift */,
-			);
-			path = Result;
-			sourceTree = "<group>";
-		};
-		1EB98CE0240238F200CF320F /* Scenes */ = {
-			isa = PBXGroup;
-			children = (
-				1EB98CD32402341E00CF320F /* Result */,
-				1EB98CD2240233DA00CF320F /* Home */,
-			);
-			path = Scenes;
-			sourceTree = "<group>";
-		};
 		1EE271B52402DFB700062541 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1EE271BA2402E3C200062541 /* SongManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -386,22 +329,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EE271BB2402E3C200062541 /* SongManager.swift in Sources */,
 				1E595A682402329F00BA8F7E /* ViewController.swift in Sources */,
-				1EE271B22402494C00062541 /* ResultModels.swift in Sources */,
-				1EE271AF2402494C00062541 /* ResultPresenter.swift in Sources */,
 				1EE271B92402E01200062541 /* ResultViewController.swift in Sources */,
-				1EE271B02402494C00062541 /* ResultWorker.swift in Sources */,
-				1EB98CDC2402343600CF320F /* HomeRouter.swift in Sources */,
 				1E595A642402329F00BA8F7E /* AppDelegate.swift in Sources */,
-				1EE271B12402494C00062541 /* ResultRouter.swift in Sources */,
-				1EB98CDE2402343600CF320F /* HomeViewController.swift in Sources */,
 				1E595A662402329F00BA8F7E /* SceneDelegate.swift in Sources */,
-				1EE271B32402494C00062541 /* ResultViewController.swift in Sources */,
-				1EE271B42402494C00062541 /* ResultInteractor.swift in Sources */,
-				1EB98CDB2402343600CF320F /* HomeWorker.swift in Sources */,
-				1EB98CDF2402343600CF320F /* HomeInteractor.swift in Sources */,
-				1EB98CDA2402343600CF320F /* HomePresenter.swift in Sources */,
-				1EB98CDD2402343600CF320F /* HomeModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
