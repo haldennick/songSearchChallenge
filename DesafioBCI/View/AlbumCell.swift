@@ -9,10 +9,11 @@
 import UIKit
 
 class AlbumCell: UICollectionViewCell {
-    @IBOutlet weak var albumImage: UIImageView!
-    @IBOutlet weak var albumTitleLabel: UILabel!
-    @IBOutlet weak var albumArtistLabel: UILabel!
+   
+    @IBOutlet weak var albumImage: RoundedImageView!
+    @IBOutlet weak var albumTitle: UILabel!
     
+    @IBOutlet weak var artistName: UILabel!
     func updateCell (album: Album) {
         let imageUrl = URL(string: album.artworkUrl100)
         
@@ -24,7 +25,7 @@ class AlbumCell: UICollectionViewCell {
             }
         }
         
-        albumTitleLabel.text = album.collectionName
-        albumArtistLabel.text = album.artistName
+        albumTitle.text = album.collectionName
+        artistName.text = album.artistName
     }
 }
