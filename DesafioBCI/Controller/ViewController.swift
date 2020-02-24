@@ -10,16 +10,14 @@ import UIKit
 import ChameleonFramework
 
 class ViewController: UIViewController {
-var songManager = SongManager()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        ItunesConnection.getAlbumForString(searchString: "Frozen") { (album:Model) in
+            print(album.album!)
+        }
         view.backgroundColor = GradientColor(UIGradientStyle.radial, frame: view.frame, colors: [FlatYellow(), FlatOrange()])
-        //songManager.delegate = self
-        
-        
-        
-    }
+        }
 
 
 }

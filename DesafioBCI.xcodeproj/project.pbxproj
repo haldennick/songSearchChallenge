@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		116C24F78C9112E3221D8A0A /* Pods_DesafioBCI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4167B937A42F2F01D79464B8 /* Pods_DesafioBCI.framework */; };
+		1E49FD97240416B70027AE93 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49FD96240416B70027AE93 /* Model.swift */; };
 		1E595A642402329F00BA8F7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E595A632402329F00BA8F7E /* AppDelegate.swift */; };
 		1E595A662402329F00BA8F7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E595A652402329F00BA8F7E /* SceneDelegate.swift */; };
 		1E595A682402329F00BA8F7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E595A672402329F00BA8F7E /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E49FD96240416B70027AE93 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		1E595A602402329F00BA8F7E /* DesafioBCI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioBCI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E595A632402329F00BA8F7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E595A652402329F00BA8F7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 		1EE271B52402DFB700062541 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1E49FD96240416B70027AE93 /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E49FD97240416B70027AE93 /* Model.swift in Sources */,
 				1E595A682402329F00BA8F7E /* ViewController.swift in Sources */,
 				1E595A642402329F00BA8F7E /* AppDelegate.swift in Sources */,
 				1E595A662402329F00BA8F7E /* SceneDelegate.swift in Sources */,
