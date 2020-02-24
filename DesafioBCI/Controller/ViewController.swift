@@ -17,9 +17,9 @@ class SearchingSong: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        searchBar.delegate = (self as UISearchBarDelegate)
-        collectionView.delegate = (self as UICollectionViewDelegate)
-        collectionView.dataSource = (self as UICollectionViewDataSource)
+        searchBar.delegate = self
+        collectionView.delegate = self
+        collectionView.dataSource = self
         
         if #available(iOS 11.0, *){
             navigationItem.largeTitleDisplayMode = .automatic
