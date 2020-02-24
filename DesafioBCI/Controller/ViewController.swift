@@ -31,48 +31,7 @@ class SearchingSong: UIViewController {
         collectionView.contentInset = UIEdgeInsets(top: 0, left: 30, bottom: 0, right: 30)
         
         searchBar.backgroundColor =  ContrastColorOf(FlatOrange(), returnFlat: true)
-        }
-
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        updateCellsLayout()
-    }
-
-    func updateCellsLayout()  {
-
-        let centerX = collectionView.contentOffset.x + (collectionView.frame.size.width)/2
-
-        for cell in collectionView.visibleCells {
-
-            var offsetX = centerX - cell.center.x
-            if offsetX < 0 {
-                offsetX *= -1
-            }
-
-            if offsetX > 0 {
-
-                let offsetPercentage = offsetX / view.bounds.width
-                let rotation = 1 - offsetPercentage
-                cell.transform = CGAffineTransform(rotationAngle: rotation - 45)
-            }
-        }
-    }
-
-
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-
-        var cellSize: CGSize = collectionView.bounds.size
-
-        cellSize.width -= collectionView.contentInset.left * 2
-        cellSize.width -= collectionView.contentInset.right * 2
-        cellSize.height = cellSize.width
-
-        return cellSize
-    }
-
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        updateCellsLayout()
-    }
+        }    
 }
 
 extension SearchingSong: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
@@ -108,3 +67,4 @@ extension SearchingSong: UISearchBarDelegate{
         searchBar.resignFirstResponder()
     }
 }
+
