@@ -17,6 +17,7 @@
 		1E595A70240232A100BA8F7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E595A6E240232A100BA8F7E /* LaunchScreen.storyboard */; };
 		1E595A7B240232A100BA8F7E /* DesafioBCITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E595A7A240232A100BA8F7E /* DesafioBCITests.swift */; };
 		1E6EF22F240446590021B0CE /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6EF22E240446590021B0CE /* AlbumCell.swift */; };
+		1E6EF23224044AE20021B0CE /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6EF23124044AE20021B0CE /* Track.swift */; };
 		1EE271BD24040FDC00062541 /* ItunesConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE271BC24040FDC00062541 /* ItunesConnection.swift */; };
 		35497A6C1C0520E2FC43F26F /* Pods_DesafioBCITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33A96AD4ACCF0DFF7732034D /* Pods_DesafioBCITests.framework */; };
 /* End PBXBuildFile section */
@@ -45,6 +46,7 @@
 		1E595A7A240232A100BA8F7E /* DesafioBCITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioBCITests.swift; sourceTree = "<group>"; };
 		1E595A7C240232A100BA8F7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E6EF22E240446590021B0CE /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		1E6EF23124044AE20021B0CE /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		1EE271BC24040FDC00062541 /* ItunesConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesConnection.swift; sourceTree = "<group>"; };
 		33A96AD4ACCF0DFF7732034D /* Pods_DesafioBCITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioBCITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4167B937A42F2F01D79464B8 /* Pods_DesafioBCI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioBCI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				1E49FD9C240433FD0027AE93 /* MusicData.swift */,
+				1E6EF23124044AE20021B0CE /* Track.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				1E49FD9D240433FD0027AE93 /* MusicData.swift in Sources */,
 				1EE271BD24040FDC00062541 /* ItunesConnection.swift in Sources */,
 				1E6EF22F240446590021B0CE /* AlbumCell.swift in Sources */,
+				1E6EF23224044AE20021B0CE /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

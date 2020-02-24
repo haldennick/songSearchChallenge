@@ -17,9 +17,9 @@ class SearchingSong: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        searchBar.delegate = (self as! UISearchBarDelegate)
-//        collectionView.delegate = (self as! UICollectionViewDelegate)
-//        collectionView.dataSource = (self as! UICollectionViewDataSource)
+        searchBar.delegate = (self as UISearchBarDelegate)
+        collectionView.delegate = (self as UICollectionViewDelegate)
+        collectionView.dataSource = (self as UICollectionViewDataSource)
         
         if #available(iOS 11.0, *){
             navigationItem.largeTitleDisplayMode = .automatic
@@ -48,6 +48,22 @@ extension SearchingSong: UICollectionViewDelegate, UICollectionViewDataSource, U
         return UICollectionViewCell()
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+       print("Do nothing")
+    }
     
 }
 
+extension SearchingSong: UISearchBarDelegate{
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        if searchBar.text != nil || searchBar.text != "" {
+            ConnectionService.instance.getAlbums(searchRequest: searchBar.text!) { (requestedAlbums) in
+                self.albums = requestedAlbums.sorted(by: {$0.collectionName < $1.collectionName})
+                DispatchQueue.main.async {
+                self.collectionView.reloadData()
+                }
+            }
+        }
+        searchBar.resignFirstResponder()
+    }
+}
