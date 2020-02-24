@@ -13,9 +13,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        ItunesConnection.getAlbumForString(searchString: "Frozen") { (album:Model) in
-            print(album.album!)
-        }
+        
         view.backgroundColor = GradientColor(UIGradientStyle.radial, frame: view.frame, colors: [FlatYellow(), FlatOrange()])
         }
 
