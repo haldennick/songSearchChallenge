@@ -8,7 +8,7 @@
 
 import Foundation
 
-let BASE_URL = "https://itunes.apple.com/search?entity=album&attribute=albumTerm&offset=0&limit=100&term="
+let BASE_URL = "https://itunes.apple.com/search?entity=album&attribute=albumTerm&offset=0&limit=20&term="
 let ALBUM_SONGS_URL = "https://itunes.apple.com/lookup?entity=song&id="
 
 class ConnectionService {

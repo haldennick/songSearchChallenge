@@ -171,7 +171,7 @@ public func FlatGreen() -> UIColor {
 }
 
 public func FlatLime() -> UIColor {
-    return UIColor.flatLime()
+	return UIColor.flatLime()
 }
 
 public func FlatMagenta() -> UIColor {
@@ -301,11 +301,11 @@ public func FlatPlumDark() -> UIColor {
 }
 
 public func FlatPowderBlueDark() -> UIColor {
-	return UIColor.flatPowderBlueDark()
+    return UIColor.flatPowderBlueDark()
 }
 
 public func FlatPurpleDark() -> UIColor {
-	return UIColor.flatPurpleDark()
+    return UIColor.flatPurpleDark()
 }
 
 public func FlatRedDark() -> UIColor {

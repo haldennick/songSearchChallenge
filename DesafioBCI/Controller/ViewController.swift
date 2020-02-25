@@ -9,9 +9,12 @@
 import UIKit
 import ChameleonFramework
 
-class SearchingSong: UIViewController {
+class SearchingSong: UIViewController{
 
     @IBOutlet weak var searchBar: UISearchBar!
+
+//    @IBOutlet weak var collectionView: UICollectionView!
+    
     @IBOutlet weak var collectionView: UICollectionView!
     var albums = [Album]()
     
@@ -20,24 +23,35 @@ class SearchingSong: UIViewController {
         searchBar.delegate = self
         collectionView.delegate = self
         collectionView.dataSource = self
-        
-        if #available(iOS 11.0, *){
-            navigationItem.largeTitleDisplayMode = .automatic
-        }
+        collectionView.backgroundColor = GradientColor(UIGradientStyle.diagonal, frame: view.frame, colors: [FlatGray()])
+//        if #available(iOS 11.0, *){
+//            navigationItem.largeTitleDisplayMode = .automatic
+//        }
         
         view.backgroundColor = GradientColor(UIGradientStyle.radial, frame: view.frame, colors: [FlatYellow(), FlatOrange()])
         
-        let indentation = (self.view.bounds.size.width - 300) / 4
-        collectionView.contentInset = UIEdgeInsets(top: indentation, left: indentation, bottom: indentation, right: indentation)
+       // let indentation = (self.view.bounds.size.width - 500) / 4
+       
         searchBar.backgroundColor =  ContrastColorOf(FlatOrange(), returnFlat: true)
         }
-
+    
+    
 }
 
 extension SearchingSong: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return albums.count
     }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let padding: CGFloat = 100
+        let collectionViewSize = collectionView.frame.size.width - padding
+        return CGSize(width: collectionViewSize/2, height: collectionViewSize/2)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 10,left: 10,bottom: 10,right: 10)
+    }
+
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AlbumCell", for: indexPath) as? AlbumCell{
@@ -66,4 +80,7 @@ extension SearchingSong: UISearchBarDelegate{
         }
         searchBar.resignFirstResponder()
     }
+    
 }
+
+
