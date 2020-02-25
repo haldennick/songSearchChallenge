@@ -8,7 +8,7 @@
 
 import UIKit
 import ChameleonFramework
-import FAPaginationLayout
+
 class SearchingSong: UIViewController {
 
     @IBOutlet weak var searchBar: UISearchBar!
@@ -28,10 +28,10 @@ class SearchingSong: UIViewController {
         view.backgroundColor = GradientColor(UIGradientStyle.radial, frame: view.frame, colors: [FlatYellow(), FlatOrange()])
         
         let indentation = (self.view.bounds.size.width - 300) / 4
-        collectionView.contentInset = UIEdgeInsets(top: 0, left: 30, bottom: 0, right: 30)
-        
+        collectionView.contentInset = UIEdgeInsets(top: indentation, left: indentation, bottom: indentation, right: indentation)
         searchBar.backgroundColor =  ContrastColorOf(FlatOrange(), returnFlat: true)
-        }    
+        }
+
 }
 
 extension SearchingSong: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
@@ -67,4 +67,3 @@ extension SearchingSong: UISearchBarDelegate{
         searchBar.resignFirstResponder()
     }
 }
-
